@@ -1,0 +1,46 @@
+{
+  "meals": [
+    {
+      "foodName": "Tejbetök",
+      "price": 2,
+      "category": "Starter",
+      "imageUrl": "https://source.unsplash.com/-YHSwy6uqvk",
+      "id": 1
+    },
+    {
+      "foodName": "Krumpli",
+      "price": 1,
+      "category": "Main Course",
+      "imageUrl": "https://source.unsplash.com/eeqbbemH9-c/1920x2320",
+      "id": 2
+    },
+    {
+      "foodName": "Super Soup",
+      "price": 7,
+      "category": "Soup",
+      "imageUrl": "https://source.unsplash.com/MqT0asuoIcU/1920x2319",
+      "id": 3
+    },
+    {
+      "foodName": "Excellent Burger",
+      "price": 10,
+      "category": "Main Course",
+      "imageUrl": "https://source.unsplash.com/sc5sTPMrVfk/1920x1595",
+      "id": 4
+    },
+    {
+      "foodName": "Valami fincsi",
+      "price": 34,
+      "category": "Starter",
+      "imageUrl": "https://source.unsplash.com/sc5sTPMrVfk/1920x1595",
+      "id": 5
+    },
+    {
+      "foodName": "Super Burger",
+      "price": 2,
+      "category": "Main course",
+      "imageUrl": "https://source.unsplash.com/sc5sTPMrVfk/1920x1595",
+      "id": 6
+    }
+  ]
+}

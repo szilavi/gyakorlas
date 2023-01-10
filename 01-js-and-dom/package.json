@@ -1,0 +1,36 @@
+{
+    "name": "js-and-dom",
+    "version": "1.0.0",
+    "description": "Javascript vizsga alap feladatok tesztkörnyezetben",
+    "main": "main.js",
+    "scripts": {
+        "test": "jest",
+        "test-watch": "jest --watch"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/PROGmasters-Ujratervezes/frontend-final-exam-practise.git"
+    },
+    "author": "Bakóczy Zoltán, Progmasters",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/PROGmasters-Ujratervezes/frontend-final-exam-practise/issues"
+    },
+    "homepage": "https://github.com/PROGmasters-Ujratervezes/frontend-final-exam-practise#readme",
+    "devDependencies": {
+        "@babel/plugin-transform-modules-commonjs": "^7.13.8",
+        "@babel/preset-env": "^7.13.9",
+        "@testing-library/jest-dom": "^5.11.9",
+        "babel-core": "^7.0.0-bridge.0",
+        "babel-preset-env": "^1.6.1",
+        "babel-preset-stage-1": "^6.24.1",
+        "jest": "^22.1.4"
+    },
+    "jest": {
+        "verbose": true,
+        "testURL": "http://localhost"
+    },
+    "dependencies": {
+        "@babel/core": "^7.13.8"
+    }
+}
