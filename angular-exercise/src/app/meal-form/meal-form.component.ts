@@ -11,9 +11,7 @@ import { HttpService } from '../service/http.service';
 export class MealFormComponent implements OnInit {
   myForm: FormGroup = new FormGroup({
     foodName: new FormControl('', [
-      Validators.pattern('^[^0-9].*'),
-      Validators.minLength(3),
-      Validators.maxLength(20),
+      Validators.pattern('^[A-Za-z][A-Za-z0-9]{2,19}$'),
     ]),
     price: new FormControl('', [
       Validators.required,
