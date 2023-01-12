@@ -1,1 +1,53 @@
-<p>meal-form works!</p>
+<section class="form-container">
+  <form class="mx-auto" [formGroup]="myForm" (ngSubmit)="saveNewMeal(myForm)">
+    <div class="form-group">
+      <label for="foodName">Food Name:</label>
+      <input
+        formControlName="foodName"
+        id="foodName"
+        type="text"
+        class="form-control"
+      />
+    </div>
+    <div class="form-group">
+      <label for="price">Price:</label>
+      <input
+        formControlName="price"
+        id="price"
+        type="number"
+        class="form-control"
+      />
+    </div>
+    <div class="form-group">
+      <label for="category">Category:</label>
+      <select
+        formControlName="category"
+        id="category"
+        type="number"
+        class="form-select"
+      >
+        <option value="Soup">Soup</option>
+        <option value="Starter">Starter</option>
+        <option value="Main course">Main course</option>
+        <option value="Dessert">Dessert</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="imageUrl">Image:</label>
+      <input
+        formControlName="imageUrl"
+        id="imageUrl"
+        type="text"
+        class="form-control"
+      />
+    </div>
+    <button
+      class="mt-4 btn btn-primary"
+      [disabled]="myForm.invalid"
+      id="saveButton"
+      type="submit"
+    >
+      Save
+    </button>
+  </form>
+</section>

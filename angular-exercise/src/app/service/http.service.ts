@@ -1,19 +1,21 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { of } from 'rxjs';
+import { Observable, of } from 'rxjs';
+import { Meal } from '../model/meal';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class HttpService {
+  apiUrl: string = 'http://localhost:3000/meals';
 
-  constructor(private http: HttpClient) { }
+  constructor(private http: HttpClient) {}
 
-  saveNewMeal(){
-    return {};
+  saveNewMeal(meal: Meal): Observable<Meal> {
+    return this.http.post<Meal>(this.apiUrl, meal);
   }
 
-  getMeal():any{
-    return {};
+  getMeal(): Observable<Meal[]> {
+    return this.http.get<Meal[]>(this.apiUrl);
   }
 }
